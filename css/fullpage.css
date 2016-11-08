@@ -1,0 +1,429 @@
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+    font-family: "Microsoft Yahei";
+}
+.section:nth-of-type(1){
+	background-image:url(../images/3.jpg);
+}
+.section:nth-of-type(2){
+	background-image:url(../images/4.jpg);
+}
+.section:nth-of-type(3){
+	background-image:url(../images/5.jpg);
+}
+.section:nth-of-type(4){
+	background-image:url(../images/7.jpg);
+}
+#box{
+	height:100%;
+	position: relative;
+}
+.top{
+	width:100%;
+	height:60px;
+    position: fixed;
+    top:0;
+    left:0;
+    background:#168BD8 ;
+    z-index: 999;
+    position: fixed;
+}
+.head{
+	width:1000px;
+	height:60px;
+	margin:0 auto;
+}
+.head .logo{
+	background-image: url(../images/logo.png);
+	background-position: -2px 0px;
+	display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    float:left;
+}
+.head .headLeft{
+	float:left;
+}
+.head .headLeft .baidu{
+	margin-left:60px;
+}
+.head .headLeft .baidu .baidu_list{
+	float:left;
+}
+.head .headLeft li a{
+	text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    font-size: 15px;
+    height: 28px;
+    padding-top: 32px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.head .headLeft li a:hover{
+	color: #67cbff;
+}
+.head .headRight{
+	float:right;
+	margin-top:25px;
+}
+.head .headRight a{
+	text-decoration: none;
+	color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.head .phone i{
+	background-image: url(../images/logo.png);
+	background-position: -88px -154px;
+	display: inline-block;
+    width: 32px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+.head .phone .phone_box{
+	width:330px;
+	height:260px;
+	background:#fff;
+	position:absolute;
+	top:60px;
+	left:710px;
+	border:1px solid #eee;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	display: none;
+}
+.head .phone .boxTop{
+	width:100%;
+	height:50px;
+	background:#f1f1f1;
+	text-align: center;
+	font-size:20px;
+	line-height: 50px;
+	font-weight: 200;
+	color:#000;
+}
+.head .phone .boxBottom{
+    text-align: center;
+    vertical-align: middle;
+    margin-top:20px;
+    margin-left:30px;
+}
+.head .phone .boxBottom .tu1{
+	width:116px;
+    height:116px;
+	background:url(../images/logo.png);
+	background-position:0 -178px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	margin-right:20px;
+}
+.head .phone .boxBottom .tu2{
+	width:116px;
+    height:116px;
+	background:url(../images/logo.png);
+	background-position:0 -300px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	margin-right:20px;
+}
+.head .phone .boxBottom .an1{
+	width:60px;
+	height:30px;
+	background:#f5f5f5;
+	position:absolute;
+	bottom:20px;
+	left:60px;
+	text-align: center;
+	font-size: 12px;
+	color:#000;
+	line-height: 30px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.head .phone .boxBottom .an2{
+	width:60px;
+	height:30px;
+	background:#f5f5f5;
+	position:absolute;
+	bottom:20px;
+	right:60px;
+	text-align: center;
+	font-size: 12px;
+	color:#000;
+	line-height: 30px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.head .phone:hover .phone_box{
+    display: block;
+}
+.head .headRight .apply{
+	color: #FFDA28;
+}
+#fp-nav ul li .fp-tooltip{
+    color: #4EBFFC;
+}
+.section .main{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+}
+.yun{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 1;
+    animation:yun 50s linear 0s infinite;
+}
+@keyframes yun{
+    from{
+        transform:translateX(0);
+    }
+    to{
+      transform:translateX(-1500px);
+    }
+}
+.plane{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 300px;
+    animation: plane .5s linear infinite alternate;
+}
+@keyframes plane{
+	from{
+		top:100px;	
+	}
+	to{
+		top:90px;
+	}
+}
+.text{
+    position: absolute;
+    left: 10px;
+    top:110px;
+    z-index:1;
+}
+.button{
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: 60px;
+    z-index: 100;
+    animation:button 2s ease 0s infinite alternate;
+}
+@keyframes button{
+    from{
+         transform:translateY(0px);
+         opacity: 1;
+    }
+    to{
+       transform:translateY(50px);
+       opacity: 0.5;
+    }
+}
+.user{
+	position: absolute;
+	right:200px;
+	top:100px;
+}
+.section .center{
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.center1{
+	position: absolute;
+	left:150px;
+	bottom: 110px;
+	transition:all 1s;
+	transform:translateX(0);
+}
+.center2{
+	position: absolute;
+	left: -180px;
+	bottom:25px;
+}
+.center3{
+    position: absolute;
+	right: 300px;
+	bottom:85px;
+}
+.center4{
+	position: absolute;
+	right: -50px;
+	bottom:23px;
+}
+.foot{
+	width:100%;
+	height:126px;
+	background:#0B67BE;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+.main .imgright{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 10;
+    transform:translate(50px);
+    transition:all 1s;
+    opacity: 0;
+}
+@keyframes move{
+	from{
+		right:0px;
+		opacity: 0;
+	}
+	to{
+		right:30px;
+		opacity: 1;
+	}
+}
+.main .textleft{
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    z-index: 10;
+    transform:translate(-50px);
+    transition:all 1s;
+    opacity: 0;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateY(0deg);	
+	}
+	40%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+.main .textright{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    z-index: 10;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    transform:translate(-50px);
+    transition:all 1s;
+    opacity: 0;
+}
+.active .imgright{
+    transform:translate(0);
+    opacity: 1;
+}
+.active .textleft{
+    transform:translate(0);
+    opacity: 1;
+    animation:rotate 2s ease-in-out 1.2s infinite;
+}
+.active .textright{
+    transform:translate(0);
+    opacity: 1;   
+}
+.active .center1{
+	transform:translateX(20px);
+}
+.active .xia{
+	transform:translate(0px);
+    opacity: 1;  
+}
+.textright{
+	width: 420px;
+	height:120px;
+	position: absolute;
+	left: 80px;
+	top:200px;
+	opacity: 0;	
+}
+.textright h1 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin-bottom: 6px;
+    font-family: "微软雅黑";
+    color:#fff;
+}
+.textright p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: .8;
+    font-family: "微软雅黑";
+    color:#fff;
+} 
+.box1{
+	background: #35b568;
+	position:absolute;
+	bottom:0;
+    left: 70px;
+    width: 44px;
+    height: 44px;
+}
+.box2{
+	background: #4ac179;
+	position:absolute;
+	bottom:0;
+    left: 158px;
+    width: 88px;
+    height: 88px;
+}
+.box3{
+    background: #8ae75a;
+    position: absolute;
+    bottom:0;
+    left: 246px;
+    width: 44px;
+    height: 44px;
+}
+.box4{
+	background: #8ae75a;
+    position: absolute;
+    bottom:0;
+    right: 328px;
+    width: 44px;
+    height: 44px;
+}
+.box5{
+    background: #4ac179;
+    position: absolute;
+    bottom:0;
+    right: 240px;
+    width: 44px;
+    height: 44px;
+}
+.yuan{
+	width: 1366px;
+	height:128px;    
+	position: absolute;
+    bottom: 0;
+    left:-183px;
+    background-image:url(../images/6.png) ;
+}
+.xia{
+	position: absolute;
+	left: 0px;
+	top:180px;
+	z-index: 0;
+	opacity: 0;
+	transform:translateX(-20px);
+    transition:all 1s;
+    opacity: 0.7;	
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>百度舆情</title>
+ <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/jquery.fullPage.min.js"></script>
+<script src="./js/jquery.fullPage.js"></script>
+<script>
+$(document).ready(function() {
+	$("#box").fullpage({
+		navigation:true,
+		navigationTooltips:["登录百度舆情","领先：数据收集与处理","全面：舆情分析逻辑与架构","专业：专业数据可视化"],
+		afterLoad:function(anchorLink, index){
+			$("#box").removeAttr("id");
+			$("#box").eq(index).addClass("active");
+			},			
+	});
+			$(".button").click(function(){
+				$.fn.fullpage.moveSectionDown()
+			})
+});
+</script>
+</head>
+<body>
+    <div class="top">
+	   <div class="head">
+	   	  <a href="#" class="logo"></a>
+	   	  <div class="headLeft">
+	   	  	 <ul class="baidu">
+	   	  	 	<li class="baidu_list"><a href="#">首页</a></li>
+	   	  	 	<li class="baidu_list"><a href="#">产品介绍</a></li>
+	   	  	 	<li class="baidu_list"><a href="#">用户版</a></li>
+	   	  	 </ul>
+	   	  </div>
+	   	  <div class="headRight">
+	   	  	 <a href="#" class="denglu">登录</a>
+	   	  	 <a href="#" class="denglu phone">手机客户端<i></i>
+                <div class="phone_box">
+                    <div class="jiao"></div>
+                	<div class="boxTop">扫码下载</div>
+                	<div class="boxBottom">
+                		<div class="tu1"></div>
+                		<div class="tu2"></div>
+                		<div class="an1">安卓</div>
+                		<div class="an2">ios</div>
+                	</div>
+                </div>
+	   	  	 </a>
+	   	  	 <a href="#" class="denglu sinan">百度司南</a>
+	   	  	 <a href="#" class="denglu us">联系我们</a>
+	   	  	 <a href="#" class="denglu apply">申请试用</a>
+	   	  </div>
+	   </div>
+	</div>
+	<div id="box">
+		<div class="section">
+			<div class="main">
+				<img src="./images/9.png" alt="" class="yun">
+                <img src="./images/10.png" alt="" class="plane">
+                <img src="./images/19.png" alt="" class="text">
+                <img src="./images/2.png" alt="" class="button">
+			</div>
+			<img src="./images/index.png" class="user"/>
+			<div class="foot"></div>
+			<div class="center">
+				<img src="./images/33.png" class="center1"/>
+                <img src="./images/14.png" class="center2"/>
+                <img src="./images/5.png" class="center3"/>
+                <img src="./images/16.png" class="center4"/>
+			</div>
+		</div>
+		<div class="section">
+			<div class="main">
+				<img src="./images/7.png" alt="" class="imgright">
+                <img src="./images/11.png" alt="" class="textleft">
+                <div class="textright">
+                   <h1>数据收集与处理</h1>
+                		<p>
+                			15年专业数据收集与语义分析技术积累
+                			<br />
+                			卓越极致，不断攀登
+                		</p>
+                </div>
+                <img src="./images/2.png" alt="" class="button">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>    
+			</div>
+		</div>
+		<div class="section">
+			<div class="main">
+				<img src="./images/1.png" class="imgright"/>
+                	<img src="./images/12.png" class="textleft"/>
+                	<div class="textright">
+                		<h1>舆情分析逻辑与架构</h1>
+                		<p>
+                			声量诊断、传播分析、情感提炼、受众画像
+                			<br />
+                			有方法论，更有智慧
+                		</p>
+                	</div>
+                	<img src="./images/2.png" class="button"/> 
+                	<div class="yuan"></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="main">
+				<img src="./images/90.png" class="imgright"/>
+                	<img src="./images/134.png" class="textleft"/>
+                	<img src="./images/8.png" class="xia"/>
+                	<div class="textright">
+                		<h1>专业数据可视化</h1>
+                		<p>
+                			非凡的数据洞悉和可视化能力
+                			<br />
+                			精研数据，惊艳所见
+                		</p>
+                	</div>            
+			</div>
+		</div>
+	</div>
+</body>
+</html>
